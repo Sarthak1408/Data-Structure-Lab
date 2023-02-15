@@ -104,9 +104,12 @@ void main()
     while (1)
     {
         printf("\n");
+        printf("\n************************************************");
         printf("\n1. Perform Linear Search.");
         printf("\n2. Perform Binary Search using Iterative method.");
         printf("\n3. Perform Binary Search using Recursive method.");
+        printf("\n************************************************");
+        printf("\n");
         printf("\n4. EXIT.");
 
         printf("\nEnter your Choice : ");
@@ -128,15 +131,19 @@ void main()
             for (i = 0; i < n; i++)
                 array[i] = rand() % (100 - 1 + 1) + 1;
 
-            printf("\nEnter Search element : ");
+            printf("\nEnter number to search : ");
             scanf("%d", &srh);
 
             int result = binarySerach(array, srh, 0, n - 1);
 
+            printf("Array : ");
+            for (size_t i = 0; i < n; i++)
+                printf("%d ", array[i]);
+
             if (result == -1)
-                printf("Item not Found.");
+                printf("\nItem not Found.");
             else
-                printf("Item Found at index %d", result);
+                printf("\nItem Found at index %d", result);
             break;
 
         case 4:
