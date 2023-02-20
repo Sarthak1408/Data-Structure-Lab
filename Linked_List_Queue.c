@@ -37,16 +37,8 @@ void delBeg()
 {
     if (HEAD == NULL)
         return;
-    else if (HEAD->next == NULL)
-        HEAD = NULL;
     else
-    {
-        Node *p = HEAD;
-        while (p->next->next != NULL)
-            p = p->next;
-        
-        p->next = NULL;
-    }
+        HEAD = HEAD->next;
 }
 
 void printList()
