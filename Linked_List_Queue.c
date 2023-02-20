@@ -60,7 +60,7 @@ void main()
     {
         printf("\n1. Insert Node in a Queue.");
         printf("\n2. Delete Node in a Queue.");
-        printf("\n3. Print the Queue.");
+        printf("\n3. Print the Queue");
         printf("\n4. EXIT.");
 
         printf("\nEnter your Choice : ");
